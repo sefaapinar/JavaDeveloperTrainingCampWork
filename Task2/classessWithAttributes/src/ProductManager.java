@@ -1,8 +1,12 @@
+package classessWithAttributes;
+
 public class ProductManager {
-    public void Add(Product product){
-        System.out.println("Ürün Eklendi" + product.productName);
+
+    public void add(Product product) {
+        System.out.println("Ürün eklendi. " + product.getName());
     }
-    public void Add2(){
+
+    public void add2(int id, String name, String descripton, int stockAmount, double price) {
 
     }
 
