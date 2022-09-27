@@ -1,25 +1,27 @@
-package classessWithAttributes;
-/*
-Encapsulation, kapsülleme dedi?imiz bir yöntemdir kullan?c?y? herhangi bir alan? kullanmak için k?s?tlamay? öngörür.
-Classlar?n bir di?er özelli?i de özellik tutmak. Classlar ilgili operasyonlar? ilgili özellikleri tutarlar.
- */
+
 public class Main {
-
+    // ====================================================
+    // Java Dersi 31 : Field ve Attribute ile Çal??mak
+    // KAYNAK : https://www.youtube.com/watch?v=EoXqaSX9nrc&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8&index=32
+    // Java Dersi 32 : Encapsulation ?htiyac?n? Anlamak
+    // KAYNAK : https://www.youtube.com/watch?v=9qYgEaAaef8&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8&index=33
+    // Java Dersi 33 : Getter ve Setter ile Çal??mak
+    // KAYNAK : https://www.youtube.com/watch?v=GDZmePf3Xmo&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8&index=34
+    // Java Dersi 34 : Constructor (Yap?c? Metodlar) ile Çal??mak
+    // KAYNAK : https://www.youtube.com/watch?v=HDaM5aRjWvI&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8&index=35
+    // ====================================================
     public static void main(String[] args) {
-
-        Product product = new Product(1, "Laptop", "Asus Laptop", 5000, 3, "Siyah");
-//       product.setName("Laptop");
-//       product.setId(1);
-//       product.setDescription("Asus Laptop");
-//       product.setPrice(5000);
-//       product.setStockAmount(3);
-        System.out.println(product.getKod());
+        Product product = new Product();
+        product.setName("Laptop");
+        product.setId(1);
+        product.setDescription("ASUS Laptop");
+        product.setPrice(5000);
+        product.setStockAmount(3);
 
         ProductManager productManager = new ProductManager();
-        productManager.add(product);
+        productManager.Add(product);
 
-        // productManager.add2(1,"","",2,200);
-
+        System.out.println("Kod : " + product.getKod());
     }
 
 }

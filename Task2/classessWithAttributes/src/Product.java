@@ -1,4 +1,4 @@
-package classesWithAttributes;
+package classessWithAttributes;
 /*
 Ürüne ait bilgiler Product classında yer alıyor.
 SOLID dediğimiz yazılım geliştirme prensipleri vardır. S = Tek sorumluluk prensibi bir class sadece bir işi yapar,
