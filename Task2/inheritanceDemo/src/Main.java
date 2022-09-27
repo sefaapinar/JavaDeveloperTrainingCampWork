@@ -4,5 +4,8 @@ public class Main {
         OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
         ogretmenKrediManager.Hesapla();
 
+        KrediUI krediUI = new KrediUI();
+        krediUI.KrediHesapla(new AskerKrediManager());
+
     }
 }
