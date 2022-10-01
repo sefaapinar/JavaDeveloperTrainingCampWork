@@ -9,6 +9,8 @@ public class Main {
 
         //implementasyon = bir class birden fazla interfaceyi implemente edebilir.
 
-
+        CustomerManager customerManager = new CustomerManager();
+        customerManager.customerDal = new OracleCustomerDal();
+        customerManager.Add();
     }
 }
