@@ -15,6 +15,6 @@ public class InstructorManager {
 
     public void Add(Instructor instructor){
         instructorDao.Add(instructor);
-       
+
     }
 }
