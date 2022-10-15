@@ -1,0 +1,16 @@
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.exe
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.deps.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.runtimeconfig.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.runtimeconfig.dev.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\bin\Debug\net5.0\OOP.pdb
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.csproj.AssemblyReference.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.AssemblyInfoInputs.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.AssemblyInfo.cs
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.csproj.CoreCompileInputs.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\refint\OOP.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.pdb
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\OOP.genruntimeconfig.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\OOP\obj\Debug\net5.0\ref\OOP.dll

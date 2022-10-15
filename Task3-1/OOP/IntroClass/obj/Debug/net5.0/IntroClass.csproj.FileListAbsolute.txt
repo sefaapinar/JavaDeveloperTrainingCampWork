@@ -1,0 +1,16 @@
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.exe
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.deps.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.runtimeconfig.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.runtimeconfig.dev.json
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\bin\Debug\net5.0\IntroClass.pdb
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.csproj.AssemblyReference.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.AssemblyInfoInputs.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.AssemblyInfo.cs
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.csproj.CoreCompileInputs.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\refint\IntroClass.dll
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.pdb
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\IntroClass.genruntimeconfig.cache
+C:\Users\sefap\Desktop\Java Homework\JavaDeveloperTrainingCampWork\Task3-1\OOP\IntroClass\obj\Debug\net5.0\ref\IntroClass.dll
