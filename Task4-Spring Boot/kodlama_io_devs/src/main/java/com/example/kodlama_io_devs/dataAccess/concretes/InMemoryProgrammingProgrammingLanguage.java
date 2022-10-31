@@ -1,6 +1,6 @@
 package com.example.kodlama_io_devs.dataAccess.concretes;
 
-import com.example.kodlama_io_devs.dataAccess.abstracts.LanguageRepository;
+import com.example.kodlama_io_devs.dataAccess.abstracts.ProgrammingLanguageRepository;
 import com.example.kodlama_io_devs.entities.concretes.ProgrammingLanguage;
 import org.springframework.stereotype.Repository;
 
@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class InMemoryProgrammingLanguage implements LanguageRepository {
+public class InMemoryProgrammingProgrammingLanguage implements ProgrammingLanguageRepository {
     private List<ProgrammingLanguage> programmingLanguages = new ArrayList<>();
 
-    public InMemoryProgrammingLanguage(){
+    public InMemoryProgrammingProgrammingLanguage(){
         programmingLanguages = new ArrayList<ProgrammingLanguage>();
         programmingLanguages.add(new ProgrammingLanguage(1,"Sıfırdan ileri seviyeye +120 saat C#"));
         programmingLanguages.add(new ProgrammingLanguage(2,"Web Geliştirici Eğitimi +40 saat"));

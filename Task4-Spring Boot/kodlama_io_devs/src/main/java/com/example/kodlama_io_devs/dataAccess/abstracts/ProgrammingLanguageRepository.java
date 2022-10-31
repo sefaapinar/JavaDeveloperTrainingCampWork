@@ -4,7 +4,7 @@ import com.example.kodlama_io_devs.entities.concretes.ProgrammingLanguage;
 
 import java.util.List;
 
-public interface LanguageRepository {
+public interface ProgrammingLanguageRepository {
     List<ProgrammingLanguage> getAll();
 
     public ProgrammingLanguage Add(ProgrammingLanguage programmingLanguage);
