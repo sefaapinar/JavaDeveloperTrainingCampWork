@@ -39,7 +39,7 @@ public class ProgrammingLanguageManager implements ProgrammingLanguageService {
 
     @Override
     public void Update(ProgrammingLanguage programmingLanguage, int LanguageID) {
-        programmingLanguageRepository.Update(programmingLanguage,programmingLanguage.getLanguageID());
+        programmingLanguageRepository.Update(programmingLanguage,LanguageID);
     }
 
     @Override
