@@ -9,8 +9,8 @@ public class ProgrammingLanguage {
     }
 
     public ProgrammingLanguage(int languageID,String languageName) {
-        languageID = languageID;
-        languageName = languageName;
+        this.languageID = languageID;
+        this.languageName = languageName;
     }
 
     public int getLanguageID() {
@@ -18,7 +18,7 @@ public class ProgrammingLanguage {
     }
 
     public void setLanguageID(int languageID) {
-        languageID = languageID;
+        this.languageID = languageID;
     }
 
     public String getLanguageName() {
@@ -26,6 +26,8 @@ public class ProgrammingLanguage {
     }
 
     public void setLanguageName(String languageName) {
-        languageName = languageName;
+        this.languageName = languageName;
     }
+
+
 }
