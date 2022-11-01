@@ -3,18 +3,19 @@ package com.example.kodlama_io_devs.business.concretes;
 import com.example.kodlama_io_devs.business.abstracts.ProgrammingLanguageService;
 import com.example.kodlama_io_devs.dataAccess.abstracts.ProgrammingLanguageRepository;
 import com.example.kodlama_io_devs.entities.concretes.ProgrammingLanguage;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProgrammingLanguageManager implements ProgrammingLanguageService {
 
-    private ProgrammingLanguageRepository programmingLanguageRepository;
+    private final ProgrammingLanguageRepository programmingLanguageRepository;
 
-    @Autowired
-    public ProgrammingLanguageManager(ProgrammingLanguageRepository programmingLanguageRepository){
+    public ProgrammingLanguageManager(ProgrammingLanguageRepository programmingLanguageRepository) {
         this.programmingLanguageRepository = programmingLanguageRepository;
     }
+
 
     @Override
     public List<ProgrammingLanguage> getAll() {
@@ -22,28 +23,35 @@ public class ProgrammingLanguageManager implements ProgrammingLanguageService {
     }
 
     @Override
-    public void Add(ProgrammingLanguage programmingLanguage) throws Exception{
-    if(!programmingLanguage.getLanguageName().isEmpty()){
-        for(int i =0; i<programmingLanguageRepository.getAll().size(); i++){
-            if(programmingLanguageRepository.getAll().get(i).getLanguageName().equalsIgnoreCase(programmingLanguage.getLanguageName())){
-                throw new Exception("Programlama Dil Adı Tekrar Edemez!.");
+    public ProgrammingLanguage Add(ProgrammingLanguage programmingLanguage) throws Exception {
+        if(programmingLanguage.getLanguageName().isEmpty()){
+            throw new Exception("Programlama dili boş geçilemez!");
+        }
+        for(ProgrammingLanguage programmingLanguage1:getAll()){
+            if(programmingLanguage1.getLanguageID() == programmingLanguage.getLanguageID()){
+                throw new Exception("Programlama adı aynı olamaz!");
             }
         }
-    }
+        programmingLanguageRepository.Add(programmingLanguage);
+        return programmingLanguage;
     }
 
+
     @Override
-    public void Delete(int LanguageID) {
+    public void Delete(int LanguageID){
         programmingLanguageRepository.Delete(LanguageID);
     }
 
     @Override
-    public void Update(ProgrammingLanguage programmingLanguage, int LanguageID) {
+    public void Update(ProgrammingLanguage programmingLanguage, int LanguageID) throws Exception{
+        if(programmingLanguageRepository.getByID(LanguageID) == null){
+            throw new Exception("Programlama dili kayıtlı değildir!!!");
+        }
         programmingLanguageRepository.Update(programmingLanguage,LanguageID);
     }
 
     @Override
-    public ProgrammingLanguage getByID(int LanguageID) {
+    public ProgrammingLanguage getByID(int LanguageID) throws Exception {
         return programmingLanguageRepository.getByID(LanguageID);
     }
 }

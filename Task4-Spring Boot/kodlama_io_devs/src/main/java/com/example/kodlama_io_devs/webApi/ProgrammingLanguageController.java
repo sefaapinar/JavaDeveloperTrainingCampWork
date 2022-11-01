@@ -3,19 +3,16 @@ package com.example.kodlama_io_devs.webApi;
 
 import com.example.kodlama_io_devs.business.abstracts.ProgrammingLanguageService;
 import com.example.kodlama_io_devs.entities.concretes.ProgrammingLanguage;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/programminglanguage")
 public class ProgrammingLanguageController {
-    private ProgrammingLanguageService programmingLanguageService;
+    private final ProgrammingLanguageService programmingLanguageService;
 
-    @Autowired
+
     public ProgrammingLanguageController(ProgrammingLanguageService programmingLanguageService) {
         this.programmingLanguageService = programmingLanguageService;
     }
@@ -24,5 +21,25 @@ public class ProgrammingLanguageController {
     public List<ProgrammingLanguage> getAll(){
         return programmingLanguageService.getAll();
     }
+
+    @GetMapping("/{id}")
+    public ProgrammingLanguage getByID(@PathVariable() int languageID) throws Exception{
+        return programmingLanguageService.getByID(languageID);
+    }
+
+    @PostMapping("/add")
+    public void add(@RequestBody ProgrammingLanguage programmingLanguage) throws Exception{
+        programmingLanguageService.Add(programmingLanguage);
+    }
+    @DeleteMapping("/delete")
+    public void delete(@PathVariable(name = "languageID") int languageID) throws Exception{
+        programmingLanguageService.Delete(languageID);
+    }
+    @PutMapping("/update")
+    public void update(@RequestBody ProgrammingLanguage programmingLanguage,@PathVariable int languageID) throws Exception{
+        programmingLanguageService.Update(programmingLanguage,languageID);
+    }
+
+
 
 }
