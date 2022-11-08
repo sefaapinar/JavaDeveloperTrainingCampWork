@@ -22,6 +22,11 @@ public class SubTechnology {
     @Column(name = "name")
     private String name;
 
+//    @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,
+//            CascadeType.REFRESH}, fetch = FetchType.EAGER, targetEntity = ProgrammingLanguage.class)
+//    @JoinColumn(name = "language_id")
+//    private ProgrammingLanguage programmingLanguage;
+
     @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,
             CascadeType.REFRESH}, fetch = FetchType.EAGER, targetEntity = ProgrammingLanguage.class)
     @JoinColumn(name = "language_id")

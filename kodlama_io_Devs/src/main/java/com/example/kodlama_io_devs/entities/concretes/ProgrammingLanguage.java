@@ -22,6 +22,10 @@ public class ProgrammingLanguage {
     @Column(name = "name")
     private String name;
 
+//    @OneToMany(mappedBy = "programmingLanguage" , fetch = FetchType.LAZY ,
+//            targetEntity = SubTechnology.class , cascade = CascadeType.ALL)
+//    private List<SubTechnology> subTechnologies;
+
     @OneToMany(mappedBy = "programmingLanguage" , fetch = FetchType.LAZY ,
             targetEntity = SubTechnology.class , cascade = CascadeType.ALL)
     private List<SubTechnology> subTechnologies;
