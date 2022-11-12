@@ -22,14 +22,14 @@ import java.util.List;
 @Service
 public class ProgrammingLanguageManager implements ProgrammingLanguageService {
 
-    private ProgrammingLanguageRepository languageRepository;
-    private SubTechnologyRepository technologyRepository;
+    private final ProgrammingLanguageRepository languageRepository;
+    private final SubTechnologyRepository technologyRepository;
 
-    @Autowired
-    public ProgrammingLanguageManager(ProgrammingLanguageRepository _programmingLanguageRepository, SubTechnologyRepository _subTechnologyRepository) {
-        super();
-        this.languageRepository = languageRepository;
-        this.technologyRepository = technologyRepository;
+
+    public ProgrammingLanguageManager(ProgrammingLanguageRepository programmingLanguageRepository, SubTechnologyRepository subTechnologyRepository) {
+
+        this.languageRepository = programmingLanguageRepository;
+        this.technologyRepository = subTechnologyRepository;
     }
 
     private boolean isLanguageEmpty(String language){
@@ -40,13 +40,8 @@ public class ProgrammingLanguageManager implements ProgrammingLanguageService {
     }
 
     private boolean isLanguageExisting(String language){
-        List<ProgrammingLanguage> languages = languageRepository.findAll();
-        for(ProgrammingLanguage programmingLanguage1: languages){
-            if(programmingLanguage1.getName().equals(language)){
-                return true;
-            }
-        }
-        return false;
+       return this.languageRepository.existsByName(language);
+
     }
 
 

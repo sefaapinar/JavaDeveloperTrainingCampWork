@@ -8,7 +8,6 @@ import com.example.kodlama_io_devs.business.requests.programmingLanguages.Update
 import com.example.kodlama_io_devs.business.responses.programmingLanguages.GetAllProgrammingLanguagesResponse;
 import com.example.kodlama_io_devs.business.responses.programmingLanguages.GetAllProgrammingLanguagesWithSubTechnologiesResponse;
 import com.example.kodlama_io_devs.business.responses.programmingLanguages.GetByIdProgrammingLanguageResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,12 +16,12 @@ import java.util.List;
 @RequestMapping("/api/programmingLanguages")
 public class ProgrammingLanguageController {
 
-    private ProgrammingLanguageService languageService;
+    private final ProgrammingLanguageService languageService;
 
-    @Autowired
+    //Final
+
     public ProgrammingLanguageController(ProgrammingLanguageService programmingLanguageService) {
-            super();
-        this.languageService = languageService;
+        this.languageService = programmingLanguageService;
     }
 
     @GetMapping("/getall")
@@ -30,9 +29,10 @@ public class ProgrammingLanguageController {
        return languageService.getAll();
     }
     @PostMapping("/add")
-    public void add(CreateProgrammingLanguageRequest languageRequest){
+    public void add(@RequestBody CreateProgrammingLanguageRequest languageRequest){
         languageService.add(languageRequest);
     }
+    //Bütün parametrelere requestbody gelecek.
     @GetMapping("/getbyid")
     public GetByIdProgrammingLanguageResponse getByIdProgrammingLanguageResponse(FindByIdProgrammingLanguageRequest byIdProgrammingLanguageRequest){
         return languageService.getById(byIdProgrammingLanguageRequest);
